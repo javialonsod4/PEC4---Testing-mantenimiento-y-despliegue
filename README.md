@@ -32,36 +32,41 @@ El dataset contiene la clasificación de la prueba de ciclismo de montaña (BTT)
 
 Deberás abrir un terminal en PyCharm e ir a la carpeta del entorno vistual con el comando:
 ---
-cd .venv
+    cd .venv
 ---
 Y desde aquí ejecutar lo siguiente:
 ---
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ---
 ### Paso 3: Ejecución de archivos
 
 En el propio terminal, y estando en la carpeta (.venv), ejecutaremos lo siguiente:
 ---
-python "archivo".py
+    python "archivo".py
 ---
 Donde pone "archivo", deberás introducir el nombre el archivo. Por ejemplo, para ejecutar el archivo principal, que contiene la resolución al ejercicio completo, deberás ejecutar:
 ---
-python main.py
+    python main.py
 ---
 ### Paso 4: Testeo de los módulos
 
 Para comprobar que los módulos creados realizan su función, se debe ejecutar el archivo "test.py" de la siguiente manera:
 ---
-python test.py
+    python test.py
 ---
 Y el resultado deberá ser algo parecido a esto, si efectivamente realizan su función:
 
 Loading dataset
 test_clean_club (__main__.TestDataExpl.test_clean_club) ... Starting test_clean_club
+
 ok
+
 test_minutes_002040 (__main__.TestDataExpl.test_minutes_002040) ... Starting test_minutes_002040
+
 ok
+
 test_name_surname (__main__.TestDataExpl.test_name_surname) ... Starting test_name_surname
+
 ok
 
 ----------------------------------------------------------------------
