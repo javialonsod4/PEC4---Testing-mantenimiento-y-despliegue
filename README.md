@@ -35,7 +35,9 @@ Deberás abrir un terminal en PyCharm e ir a la carpeta del entorno vistual con 
 ---
     cd .venv
 ---
+
 Y desde aquí ejecutar lo siguiente:
+
 ---
     pip install -r requirements.txt
 ---
