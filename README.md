@@ -31,6 +31,7 @@ El dataset contiene la clasificación de la prueba de ciclismo de montaña (BTT)
 ### Paso 2: Instalación de dependencias
 
 Deberás abrir un terminal en PyCharm e ir a la carpeta del entorno vistual con el comando:
+
 ---
     cd .venv
 ---
@@ -42,10 +43,13 @@ Y desde aquí ejecutar lo siguiente:
 ### Paso 3: Ejecución de archivos
 
 En el propio terminal, y estando en la carpeta (.venv), ejecutaremos lo siguiente:
+
 ---
     python "archivo".py
 ---
+
 Donde pone "archivo", deberás introducir el nombre el archivo. Por ejemplo, para ejecutar el archivo principal, que contiene la resolución al ejercicio completo, deberás ejecutar:
+
 ---
     python main.py
 ---
@@ -53,6 +57,7 @@ Donde pone "archivo", deberás introducir el nombre el archivo. Por ejemplo, par
 ### Paso 4: Testeo de los módulos
 
 Para comprobar que los módulos creados realizan su función, se debe ejecutar el archivo "test.py" de la siguiente manera:
+
 ---
     python test.py
 ---
@@ -79,6 +84,7 @@ OK
 ### Paso 5: Comprobación de seguimiento de estilo PEP8
 
 Para comprobar que los diferentes archivos siguen la librería de estilo PEP8, debemos ejecutar en la terminal:
+
 ---
     pylint "archivo.py"
 ---
