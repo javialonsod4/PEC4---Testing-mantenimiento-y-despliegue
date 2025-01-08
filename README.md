@@ -83,6 +83,3 @@ Para comprobar que los diferentes archivos siguen la librería de estilo PEP8, d
     pylint "archivo.py"
 ---
 Esto nos devolverá los errores que hemos podido cometer en cuanto a limpieza del código en función de la librería.
-
-## Licencia
-
