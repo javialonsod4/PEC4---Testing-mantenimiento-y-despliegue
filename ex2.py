@@ -1,5 +1,4 @@
 import pandas as pd
-from faker import Faker
 from utils import name_surname
 
 if __name__ == '__main__':
@@ -23,7 +22,7 @@ if __name__ == '__main__':
 
     # Mostramos los ciclistas que quedan.
     num_bikers_with_time = df['dorsal'].count()
-    print('\nQuedan {} ciclistas.'.format(num_bikers_with_time))
+    print(f'\nQuedan {num_bikers_with_time} ciclistas.')
 
     # Mostramos los 5 primeros valores del nuevo dataframe.
     print('\nLos nuevos 5 primeros valores son:')
