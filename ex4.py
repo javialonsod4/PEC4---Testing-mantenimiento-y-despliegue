@@ -1,6 +1,4 @@
-import re
 import pandas as pd
-from faker import Faker
 from utils import name_surname, minutes_002040, clean_club
 
 if __name__ == '__main__':
@@ -8,7 +6,7 @@ if __name__ == '__main__':
     # Recreamos el dataframe que hemos ido amoldando.
     # Primer ejercicio.
     df = pd.read_csv('data/dataset.csv', sep=';')
-    
+
     # Segundo ejercicio.
     df = name_surname(df)
     for i in range(len(df)):
@@ -16,7 +14,7 @@ if __name__ == '__main__':
             df.drop(i, inplace=True)
 
     # Tercer ejercicio.
-    t_grouped = list()
+    t_grouped = []
     for i in df['time']:
         t = minutes_002040(i)
         t_grouped.append(t)
@@ -26,7 +24,7 @@ if __name__ == '__main__':
     # La función 'clean_club' devuelve el nombre del club limpio,
     # por lo que añadiremos a una lista los nombres de los clubes
     # limpios y con la lista añadiremos la nueva columna 'club_clean'.
-    c_clean = list()
+    c_clean = []
 
     for c in df['club']:
         c_clean.append(clean_club(c))
