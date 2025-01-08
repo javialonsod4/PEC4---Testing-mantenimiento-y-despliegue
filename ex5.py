@@ -1,6 +1,4 @@
-import re
 import pandas as pd
-from faker import Faker
 from utils import name_surname, minutes_002040, clean_club
 
 if __name__ == '__main__':
@@ -16,18 +14,18 @@ if __name__ == '__main__':
             df.drop(i, inplace=True)
 
     # Tercer ejercicio.
-    t_grouped = list()
+    t_grouped = []
     for i in df['time']:
         t = minutes_002040(i)
         t_grouped.append(t)
     df['time_grouped'] = t_grouped
-    
+
     # Cuarto ejercicio.
-    c_clean = list()
+    c_clean = []
     for c in df['club']:
         c_clean.append(clean_club(c))
     df['club_clean'] = c_clean
-    
+
     # QUINTO EJERCICIO.
     # Mostramos los ciclistas de la UCSC.
     print('\nLos ciclistas de la UCSC son:')
@@ -49,9 +47,9 @@ if __name__ == '__main__':
     # siguiente valor para conocer la posición real del ciclista.
     pos_first_ucsc = i + 1
     total_bikers = len(df['club_clean'])
-    print('\nEl primer ciclista de la UCSC quedó en posición {} de {}'
-          ' ciclistas.'.format(pos_first_ucsc, total_bikers))
+    print(f'\nEl primer ciclista de la UCSC quedó en posición {pos_first_ucsc}'
+          f' de {total_bikers} ciclistas.')
 
     # Mostramos el porcentaje del ciclista.
     per_first_ucsc = (pos_first_ucsc / total_bikers) * 100
-    print('\nEsto representa un {0:.2f} porciento.'.format(per_first_ucsc))
+    print(f'\nEsto representa un {"%.2f"%per_first_ucsc} porciento.')
