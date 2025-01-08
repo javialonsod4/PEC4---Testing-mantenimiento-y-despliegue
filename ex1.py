@@ -17,4 +17,4 @@ if __name__ == "__main__":
 
     # Columnas del dataframe.
     cols = list(df.columns)
-    print('\nLas columnas del dataframe son:\n{}'.format(cols))
+    print(f'\nLas columnas del dataframe son:\n{cols}')
