@@ -18,7 +18,7 @@ Y es aconsejable instalar también Pycharm, donde podrás ejecutar todos los arc
 
 ### Archivos
 
-Este proyecto contiene diferentes archivos planos de Python (.py), una carpeta "data" que contiene el dataset que se estudia, una carpeta "img" que contiene un histograma creado en el propio proyecto, y el archivo de texto "requirements.txt" que contiene las versiones requeridas de librerías. Dentro de los archivos .py, encontramos primero un archivo llamado "utils.py" que contiene diferentes módulos creados para el proyecto. Luego un archivo "main.py" que contiene la resolución de todos los ejercicios en orden. Además, los archivos "Ex1.py", "Ex2.py", "Ex3.py", "Ex4.py" y "Ex5.py", donde encontramos la resolución a cada ejercicio por separado. Finalmente, un último archivo "test.py" que testea o comprueba que los módulos realizan su función correctamente mediante una suite del módulo "unittest" de Python.
+Este proyecto contiene diferentes archivos planos de Python (.py), una carpeta "data" que contiene el dataset que se estudia, una carpeta "img" que contiene un histograma creado en el propio proyecto, y el archivo de texto "requirements.txt" que contiene las versiones requeridas de librerías. Dentro de los archivos .py, encontramos primero un archivo llamado "utils.py" que contiene diferentes módulos creados para el proyecto. Luego un archivo "main.py" que contiene la resolución de todos los ejercicios en orden. Además, los archivos "ex1.py", "ex2.py", "ex3.py", "ex4.py" y "ex5.py", donde encontramos la resolución a cada ejercicio por separado. Finalmente, un último archivo "test.py" que testea o comprueba que los módulos realizan su función correctamente mediante una suite del módulo "unittest" de Python.
 
 ### Descripción del dataset
 
@@ -38,6 +38,7 @@ Y desde aquí ejecutar lo siguiente:
 ---
     pip install -r requirements.txt
 ---
+
 ### Paso 3: Ejecución de archivos
 
 En el propio terminal, y estando en la carpeta (.venv), ejecutaremos lo siguiente:
@@ -48,6 +49,7 @@ Donde pone "archivo", deberás introducir el nombre el archivo. Por ejemplo, par
 ---
     python main.py
 ---
+
 ### Paso 4: Testeo de los módulos
 
 Para comprobar que los módulos creados realizan su función, se debe ejecutar el archivo "test.py" de la siguiente manera:
@@ -73,4 +75,14 @@ ok
 Ran 3 tests in 3.022s
 
 OK
+
+### Paso 5: Comprobación de seguimiento de estilo PEP8
+
+Para comprobar que los diferentes archivos siguen la librería de estilo PEP8, debemos ejecutar en la terminal:
+---
+    pylint "archivo.py"
+---
+Esto nos devolverá los errores que hemos podido cometer en cuanto a limpieza del código en función de la librería.
+
+## Licencia
 
