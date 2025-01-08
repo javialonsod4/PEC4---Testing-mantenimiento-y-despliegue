@@ -1,4 +1,4 @@
-# PEC4 - Testing-mantenimiento-y-despliegue
+# PEC4_Alonso_Duran_Javier
 Toma de contacto con archivos planos de Python (.py) y testeo y mantenimiento de funciones.
 
 ---
