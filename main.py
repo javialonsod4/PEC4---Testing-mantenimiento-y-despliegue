@@ -1,8 +1,6 @@
 import os
-import re
 import pandas as pd
 import matplotlib.pyplot as plt
-from faker import Faker
 from utils import name_surname, minutes_002040, clean_club
 
 if __name__ == "__main__":
@@ -26,7 +24,7 @@ if __name__ == "__main__":
 
     # Columnas del dataframe.
     cols = list(df.columns)
-    print('\nLas columnas del dataframe son:\n{}'.format(cols))
+    print(f'\nLas columnas del dataframe son:\n{cols}')
 
     # SEGUNDO EJERCICIO:
     # Anonimizar los ciclistas. Limpiar el dataset.
@@ -46,7 +44,7 @@ if __name__ == "__main__":
 
     # Mostramos los ciclistas que quedan.
     num_bikers_with_time = df['dorsal'].count()
-    print('\nQuedan {} ciclistas.'.format(num_bikers_with_time))
+    print(f'\nQuedan {num_bikers_with_time} ciclistas.')
 
     # Mostramos los 5 primeros valores del nuevo dataframe.
     print('\nLos nuevos 5 primeros valores son:')
@@ -63,7 +61,7 @@ if __name__ == "__main__":
     # Ejecutamos la función 'minutes_002040' a cada uno de los valores
     # de la columna 'time', lo añadimos a una lista y creamos la nueva
     # columna 'time_grouped'.
-    t_grouped = list()
+    t_grouped = []
 
     for i in df['time']:
         t = minutes_002040(i)
@@ -85,11 +83,11 @@ if __name__ == "__main__":
     print(df_grouped)
 
     # Para poder guardar el histograma, debemos crear el nuevo directorio.
-    new_folder = 'img'
+    NEW_FOLDER = 'img'
     try:
-        os.mkdir(new_folder)
+        os.mkdir(NEW_FOLDER)
     except FileExistsError:
-        print('\nFolder "{}" already exists.'.format(new_folder))
+        print(f'\nFolder "{NEW_FOLDER}" already exists.')
 
     # Ahora generamos el histograma y lo guardamos en el nuevo directorio.
     plt.figure()
@@ -109,7 +107,7 @@ if __name__ == "__main__":
     # La función 'clean_club' devuelve el nombre del club limpio,
     # por lo que añadiremos a una lista los nombres de los clubes
     # limpios y con la lista añadiremos la nueva columna 'club_clean'.
-    c_clean = list()
+    c_clean = []
 
     for c in df['club']:
         c_clean.append(clean_club(c))
@@ -154,9 +152,9 @@ if __name__ == "__main__":
     # siguiente valor para conocer la posición real del ciclista.
     pos_first_ucsc = i + 1
     total_bikers = len(df['club_clean'])
-    print('\nEl primer ciclista de la UCSC quedó en posición {} de {}'
-          ' ciclistas.'.format(pos_first_ucsc, total_bikers))
+    print(f'\nEl primer ciclista de la UCSC quedó en posición {pos_first_ucsc}'
+          f' de {total_bikers} ciclistas.')
 
     # Mostramos el porcentaje del ciclista.
     per_first_ucsc = (pos_first_ucsc / total_bikers) * 100
-    print('\nEsto representa un {0:.2f} porciento.'.format(per_first_ucsc))
+    print(f'\nEsto representa un {"%.2f"%per_first_ucsc} porciento.')
