@@ -26,25 +26,26 @@ El dataset contiene la clasificación de la prueba de ciclismo de montaña (BTT)
 
 ## Ejecución
 
-### Paso 1: Cargar los archivos en la carpeta del entorno virtual de PyCharm (carpeta .venv)
+### Paso 1: Descargar los archivos 
 
-### Paso 2: Instalación de dependencias
+### Paso 2: Acceder a la carpeta
 
-Deberás abrir un terminal en PyCharm e ir a la carpeta del entorno vistual con el comando:
+Acceder a la carpeta donde se encuentran los archivos tras descomprimir el .zip:
 
 ---
-    cd .venv
----
+    cd PEC4_Alonso_Duran_Javier/PEC4_Alonso_Duran_Javier
 
-Y desde aquí ejecutar lo siguiente:
+### Paso 3: Instalación de dependencias
+
+Desde aquí ejecutar lo siguiente para descargar los requerimientos:
 
 ---
     pip install -r requirements.txt
 ---
 
-### Paso 3: Ejecución de archivos
+### Paso 4: Ejecución de archivos
 
-En el propio terminal, y estando en la carpeta (.venv), ejecutaremos lo siguiente:
+Para ejecutar los diferentes archivos planos, ejecutaremos:
 
 ---
     python "archivo".py
