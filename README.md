@@ -55,13 +55,13 @@ Desde aquí ejecutar lo siguiente para descargar los requerimientos:
 Para ejecutar los diferentes archivos planos, ejecutaremos:
 
 ---
-    python "archivo".py
+    python3 "archivo".py
 ---
 
 Donde pone "archivo", deberás introducir el nombre el archivo. Por ejemplo, para ejecutar el archivo principal, que contiene la resolución al ejercicio completo, deberás ejecutar:
 
 ---
-    python main.py
+    python3 main.py
 ---
 
 ### Paso 4: Testeo de los módulos
@@ -69,7 +69,7 @@ Donde pone "archivo", deberás introducir el nombre el archivo. Por ejemplo, par
 Para comprobar que los módulos creados realizan su función, se debe ejecutar el archivo "test.py" de la siguiente manera:
 
 ---
-    python test.py
+    python3 test.py
 ---
 Y el resultado deberá ser algo parecido a esto, si efectivamente realizan su función:
 
