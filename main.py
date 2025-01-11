@@ -1,3 +1,5 @@
+'''This module solves all the exercises in its order.'''
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
