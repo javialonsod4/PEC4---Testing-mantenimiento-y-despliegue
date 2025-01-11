@@ -1,3 +1,5 @@
+'''This module solves exercise 2.'''
+
 import pandas as pd
 from utils import name_surname
 
