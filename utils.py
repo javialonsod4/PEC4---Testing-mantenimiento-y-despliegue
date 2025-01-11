@@ -1,3 +1,5 @@
+'''This module contains functiones to solver the exercises.'''
+
 from faker import Faker
 import re
 
