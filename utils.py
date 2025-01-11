@@ -1,7 +1,7 @@
 '''This module contains functiones to solver the exercises.'''
 
-from faker import Faker
 import re
+from faker import Faker
 
 
 def name_surname(df):
@@ -47,10 +47,9 @@ def minutes_002040(t):
     # en función del valor inicial de los segundos.
     if int(t[1]) < 20:
         return t[0] + ':00'
-    elif int(t[1]) < 40:
+    if int(t[1]) < 40:
         return t[0] + ':20'
-    else:
-        return t[0] + ':40'
+    return t[0] + ':40'
 
 
 def clean_club(club):
