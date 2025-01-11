@@ -1,3 +1,5 @@
+'''This module solves exercise 3.'''
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
