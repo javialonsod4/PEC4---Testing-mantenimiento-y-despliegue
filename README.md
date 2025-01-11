@@ -30,10 +30,17 @@ El dataset contiene la clasificación de la prueba de ciclismo de montaña (BTT)
 
 ### Paso 2: Acceder a la carpeta
 
-Acceder a la carpeta donde se encuentran los archivos tras descomprimir el .zip:
+Acceder a la carpeta donde se encuentran los archivos tras descomprimir el .zip con este comando:
 
 ---
     cd PEC4_Alonso_Duran_Javier-main/PEC4_Alonso_Duran_Javier-main
+---
+
+O con el comando siguiente, si al descomprimirse el archivo se abre directamente la segunda carpeta:
+
+---
+    cd PEC4_Alonso_Duran_Javier-main
+---
 
 ### Paso 3: Instalación de dependencias
 
