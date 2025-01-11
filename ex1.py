@@ -1,3 +1,5 @@
+'''This module solves exercise 1.'''
+
 import pandas as pd
 
 if __name__ == "__main__":
